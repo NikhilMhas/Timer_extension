@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "PomoraChrome",
+  "description": "Supercharge Your Productivity with the Ultimate Pomodoro Timer and Task Manager",
+  "version": "1.0.0",
+  "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "permissions": ["storage","alarms","notifications"],
+
+  "background":{
+      "service_worker":"background.js"
+  },
+
+  "action": {
+    "default-icon":"logo.png",
+    "default_title": "Break Timer",
+    "default_popup": "popup/popup.html"
+  },
+  "options_page":"options/options.html"
+}
